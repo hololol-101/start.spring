@@ -4,7 +4,7 @@ import start.start.spring.domain.Member;
 
 import java.util.*;
 
-public class MemoryMemberRepository implements MemberReposiroty {
+public class MemoryMemberRepository implements MemberRepository {
     private static Map<Long, Member> store = new HashMap<>();
     private static Long sequence = 0L;
 
@@ -30,5 +30,9 @@ public class MemoryMemberRepository implements MemberReposiroty {
     @Override
     public List<Member> findAll() {
         return new ArrayList<>(store.values());
+    }
+
+    public void clearStore(){
+        store.clear();
     }
 }
