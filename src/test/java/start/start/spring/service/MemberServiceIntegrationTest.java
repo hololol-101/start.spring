@@ -22,7 +22,7 @@ class MemberServiceIntegrationTest {
     MemberRepository memberRepository;
 
     @Test
-    public void 회원가입() {
+    void 회원가입() {
         //given
         Member member = new Member();
         member.setName("spring");
