@@ -1,4 +1,9 @@
-package start.start.spring.basic.core.member;
+package start.start.spring.basic.core;
+
+import start.start.spring.basic.core.member.Grade;
+import start.start.spring.basic.core.member.Member;
+import start.start.spring.basic.core.member.MemberService;
+import start.start.spring.basic.core.member.MemberServiceImpl;
 
 public class MemberApp {
 
